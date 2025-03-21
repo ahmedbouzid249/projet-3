@@ -1,0 +1,215 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Food</title>
+  <!-- CSS Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome pour les icônes -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Section héro avec dégradé */
+    .hero {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 31, 63, 0.8)); /* Bleu nuit dégradé vers noir */
+      height: 500px;
+      position: relative;
+      margin-bottom: 80px; /* Espacement en bas de la section hero */
+    }
+    .hero h1 {
+      font-size: 5rem; /* Augmenter la taille du titre */
+      z-index: 1;
+      font-weight: bold;
+      color: #ffffff; /* Texte en blanc */
+    }
+    .hero p {
+      font-size: 1.8rem;
+      color: #dcdcdc; /* Texte en gris clair pour un contraste élégant */
+    }
+    .hero a {
+      font-size: 1.25rem;
+      padding: 15px 30px;
+      background-color: #003f63; /* Bleu nuit pour le bouton */
+      color: #ffffff; /* Texte du bouton en blanc */
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero a:hover {
+      background-color: #00232e; /* Un bleu encore plus foncé pour le survol */
+    }
+
+    /* Espacement supplémentaire pour les sections */
+    #menu {
+      margin-top: 80px; /* Espacement supplémentaire en haut de la section Menu */
+    }
+
+    /* Augmenter la taille du nom du restaurant */
+    .navbar-brand {
+      font-size: 2.5rem; /* Augmenter la taille du texte du nom */
+      font-weight: bold;
+      color: #003f63; /* Bleu nuit pour le texte du nom */
+    }
+
+    .navbar-brand:hover {
+      color: #00232e; /* Couleur hover pour le nom */
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .card-body {
+      padding: 2rem; /* Augmenter le padding des cartes */
+    }
+    .card-title {
+      font-size: 1.5rem;
+    }
+    .social-icon {
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+    footer {
+      font-size: 1.1rem;
+    }
+
+    /* Espacement entre les autres sections */
+    #about, #contact {
+      margin-top: 80px; /* Espacement entre les sections */
+    }
+
+    /* Modifications de l'image du restaurant */
+    .about-image {
+      width: 100%; /* Prend toute la largeur du conteneur */
+      height: auto; /* Hauteur s'ajuste automatiquement */
+      object-fit: cover; /* Permet de recadrer l'image tout en couvrant la zone */
+      border-radius: 10px; /* Coins arrondis */
+      margin-bottom: 30px; /* Marge en bas de l'image */
+      max-height: 500px; /* Hauteur maximale de l'image */
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Section en-tête -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Great Food</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">À propos de nous</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section héro avec dégradé -->
+  <section class="hero d-flex justify-content-center align-items-center text-center">
+    <div>
+      <h1>Bienvenue chez Great Food</h1>
+      <p>Des plats délicieux, un service exceptionnel, une expérience inoubliable</p>
+      <a href="#menu">Voir notre Menu</a>
+    </div>
+  </section>
+
+  <!-- Section Menu -->
+  <section id="menu" class="container mt-5">
+    <h2 class="text-center display-4">Notre Menu</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://cache.marieclaire.fr/data/photo/w1000_ci/6u/recette-ragout-boeuf-epice.jpg" class="card-img-top" alt="Ragoût de Boeuf">
+          <div class="card-body">
+            <h5 class="card-title">Ragoût de Boeuf</h5>
+            <p class="card-text">Un savoureux ragoût de boeuf cuit lentement avec des légumes frais et des épices.</p>
+            <p class="price">$22</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/856544254/fr/photo/repas-de-poisson.jpg?s=612x612&w=0&k=20&c=piEE6GMYX7OKNDz_2GlQvX18PjOCr1JaSItSb6r-x80=" class="card-img-top" alt="Poisson Grillé">
+          <div class="card-body">
+            <h5 class="card-title">Poisson Grillé</h5>
+            <p class="card-text">Poisson frais grillé à la perfection, servi avec une sauce citronnée et des légumes de saison.</p>
+            <p class="price">$18</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://truffe-passion.fr/wp-content/uploads/2025/03/1741306453-risotto-a-la-truffe-au-thermomix-recette-facile-et-gourmande.jpg" class="card-img-top" alt="Pâtes à la Truffe">
+          <div class="card-body">
+            <h5 class="card-title">Pâtes à la Truffe</h5>
+            <p class="card-text">Des pâtes fraîches avec une sauce crémeuse à la truffe, garnies de parmesan râpé.</p>
+            <p class="price">$24</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section À propos de nous -->
+  <section id="about" class="container mt-5">
+    <h2 class="text-center display-4">À propos de nous</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="c:\Users\Mega-PC\Pictures\Nouveau dossier (2)\Capture d’écran 2025-03-20 204142.png" class="about-image" alt="Restaurant Image">
+      </div>
+      <div class="col-md-6">
+        <p>Nous sommes un restaurant passionné par la cuisine locale. Nous offrons des plats délicieux et une atmosphère chaleureuse pour tous nos invités. Nous utilisons uniquement des ingrédients frais et de qualité pour garantir une expérience gastronomique unique.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="container mt-5">
+    <h2 class="text-center display-4">Contactez-nous</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Nom</label>
+          <input type="text" class="form-control form-control-lg" id="name" placeholder="Votre nom">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="email" class="form-control form-control-lg" id="email" placeholder="Votre email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Votre message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <p>&copy; 2025 Great Food. Tous droits réservés.</p>
+    <div>
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
